@@ -1,5 +1,5 @@
 // Replace these with your actual details
-const GOOGLE_SHEET_ID = "YOUR_SPREADSHEET_ID_HERE";
+const GOOGLE_SHEET_ID = "1bgbisoj2_4RJKGajC4x4tAmOGPRSnlt1Zs9pRHtkTh4";
 const GOOGLE_API_KEY = "YOUR_API_KEY_HERE"; // Needed for unauthenticated GETs if sheet is public, OR
 // Service Account details for authenticated POST/PATCH:
 const SERVICE_ACCOUNT_EMAIL = "your-service-account@your-project.iam.gserviceaccount.com";
