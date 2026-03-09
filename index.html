@@ -170,10 +170,9 @@
             <table id="linksTable">
                 <thead>
                     <tr>
-                        <th style="width: 25%">Original URL</th>
-                        <th style="width: 30%">API Short URL</th>
-                        <th style="width: 30%">Local Redirect Link</th>
-                        <th style="width: 15%">Local Clicks</th>
+                        <th style="width: 30%">Original URL</th>
+                        <th style="width: 35%">API Short URL</th>
+                        <th style="width: 35%">Local Redirect Link</th>
                     </tr>
                 </thead>
                 <tbody id="linksBody"></tbody>
@@ -267,18 +266,10 @@
                 idA.textContent = localShortUrl;
                 idTd.appendChild(idA);
 
-                // Cell 4: Local Clicks Badge
-                const clicksTd = document.createElement("td");
-                const badge = document.createElement("span");
-                badge.className = "badge";
-                badge.textContent = link.clicks;
-                clicksTd.appendChild(badge);
-
                 // Append cells
                 tr.appendChild(originalTd);
                 tr.appendChild(apiTd);
                 tr.appendChild(idTd);
-                tr.appendChild(clicksTd);
                 tbody.appendChild(tr);
             });
         }
