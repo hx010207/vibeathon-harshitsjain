@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Link Analytics Shortener</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <div class="app">
-    <h1>Link Analytics Shortener</h1>
-    <form id="shortenForm">
-      <input id="urlInput" type="text" placeholder="Paste your long URL…" />
-      <button type="submit">Shorten</button>
-    </form>
-    <div id="errorMsg" class="error"></div>
 
-    <h2>Your Links</h2>
-    <table id="linksTable">
-      <thead>
-        <tr>
-          <th>Original URL</th>
-          <th>Short URL</th>
-          <th>Clicks</th>
-        </tr>
-      </thead>
-      <tbody id="linksBody"></tbody>
-    </table>
-  </div>
-  <script src="script.js"></script>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link Analytics Shortener</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="app">
+        <h1>Link Analytics Shortener</h1>
+        <form id="shortenForm">
+            <input id="urlInput" type="text" placeholder="Paste your long URL…" />
+            <button type="submit">Shorten</button>
+        </form>
+        <div id="errorMsg" class="error"></div>
+
+        <h2>Your Links</h2>
+        <table id="linksTable">
+            <thead>
+                <tr>
+                    <th>Short ID</th>
+                    <th>Original URL</th>
+                    <th>Short URL</th>
+                    <th>Clicks</th>
+                    <th>Created</th>
+                </tr>
+            </thead>
+            <tbody id="linksBody"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
