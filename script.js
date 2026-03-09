@@ -13,7 +13,7 @@ const SERVICE_ACCOUNT_EMAIL = "your-service-account@your-project.iam.gserviceacc
 // Since we have strict pure client-side constraints, we'll implement a Google Apps Script 
 // web app as a proxy (the standard way to do this without exposing secrets).
 
-const APPS_SCRIPT_URL = "YOUR_APPS_SCRIPT_WEB_APP_URL_HERE";
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxhgPLtD4Nb8xUrEuZZ4JyHLlK093jkoG8CrHlG98WjxWv7MkbLEtLdTB4hUw911V7L/exec";
 const STORAGE_KEY = "links";
 
 // --- Data Fetching & Syncing ---
